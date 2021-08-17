@@ -13,6 +13,31 @@ public class Calculadora {
 
             Scanner scanner = new Scanner(System.in);
             opcao = scanner.nextInt();
+            processar(opcao);
         }while(opcao != 0);
+    }
+
+    public static void processar(int opcao){
+        switch(opcao){
+            case 1:{
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Somar dois numeros");
+
+                System.out.print("Digite o primeiro numero: " );
+                int numero1 = scanner.nextInt();
+
+                System.out.print("Digite o segundo numero: ");
+                int numero2 = scanner.nextInt();
+
+                int somar = numero1 + numero2;
+                System.out.println("O resultado da soma é: " + somar);
+                
+            break;
+            }
+
+            case 2:
+            case 3:
+            case 4:
+        }
     }
 }
