@@ -18,26 +18,66 @@ public class Calculadora {
     }
 
     public static void processar(int opcao){
-        switch(opcao){
-            case 1:{
+        switch(opcao) {
+            case 1: {
                 Scanner scanner = new Scanner(System.in);
                 System.out.println("Somar dois numeros");
 
-                System.out.print("Digite o primeiro numero: " );
+                System.out.print("Digite o primeiro numero: ");
                 int numero1 = scanner.nextInt();
 
                 System.out.print("Digite o segundo numero: ");
                 int numero2 = scanner.nextInt();
 
-                int somar = numero1 + numero2;
-                System.out.println("O resultado da soma é: " + somar);
-                
-            break;
-            }
+                int resultado = numero1 + numero2;
+                System.out.println("O resultado da soma é: " + resultado);
 
-            case 2:
-            case 3:
+                break;
+            }
+            case 2:{
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Subtrair dois numeros");
+
+                System.out.print("Digite o primeiro numero: ");
+                int numero1 = scanner.nextInt();
+
+                System.out.print("Digite o segundo numero: ");
+                int numero2 = scanner.nextInt();
+
+                int resultado = numero1 - numero2;
+                System.out.println("O resultado da subtração é: " + resultado);
+
+                break;
+            }
+            case 3: {
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Multiplicar dois numeros");
+
+                System.out.print("Digite o primeiro numero: ");
+                int numero1 = scanner.nextInt();
+
+                System.out.print("Digite o segundo numero: ");
+                int numero2 = scanner.nextInt();
+
+                int resultado = numero1 * numero2;
+                System.out.println("O resultado da multiplicação é: " + resultado);
+                break;
+            }
             case 4:
+            {
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Dividir dois numeros");
+
+                System.out.print("Digite o primeiro numero: ");
+                int numero1 = scanner.nextInt();
+
+                System.out.print("Digite o segundo numero: ");
+                int numero2 = scanner.nextInt();
+
+                int resultado = numero1 / numero2;
+                System.out.println("O resultado da multiplicação é: " + resultado);
+                break;
+            }
         }
     }
 }
